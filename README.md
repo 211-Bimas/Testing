@@ -1,10 +1,18 @@
 # Testing
+```javascript
+const saveTasks = () => {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+};
+
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+```javascript
+
 ## Penjelasan Teknis
 1. localStorage (Penyimpanan Data)
-   '''javascript
-   function saveToStorage() {
-    localStorage.setItem("tugas", JSON.stringify(tasks));
-}
+'''javascript
+function saveToStorage() {
+localStorage.setItem("tugas", JSON.stringify(tasks));
+};
 
 3. Validasi Form
    '''javascript
